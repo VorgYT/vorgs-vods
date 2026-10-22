@@ -1,21 +1,23 @@
 {
   "name": "vorgs-vods",
-  "version": "1.0.0",
-  "description": "AI Fortnite VOD Review Suite",
+  "version": "1.0.4",
+  "description": "AI-powered Fortnite VOD reviews",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder --win"
+    "build": "electron-builder"
   },
   "devDependencies": {
     "electron": "^28.0.0",
     "electron-builder": "^24.9.0"
   },
   "build": {
-    "appId": "com.vorgsvods.app",
-    "productName": "Vorgs VODs",
+    "appId": "com.vorg.vods",
     "win": {
       "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
     }
   }
 }
